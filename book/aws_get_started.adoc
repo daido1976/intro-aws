@@ -79,7 +79,7 @@ image::imgs/aws_region_and_az.png[AWS regions and azs, 500, align="center"]
 <<fig_aws_regions>> は2020/05時点で利用できるRegionの世界地図を示している．
 **インターネットの接続などの観点から，地理的に一番近いRegionを使用するのが一般的によいとされる．**
 日本では東京にデータセンターがある．また大阪リージョンも2021年に提供開始予定とのことである．
-各Regionには固有のIDがついており，例えば東京は `ap-northeast-1`, 米国オハイオ州は `us-west-2`，などと定義されている．
+各Regionには固有のIDがついており，例えば東京は `ap-northeast-1`, 米国オハイオ州は `us-east-2`，などと定義されている．
 
 [[fig_aws_regions]]
 .Regions in AWS(出典: https://aws.amazon.com/about-aws/global-infrastructure/)
