@@ -4,6 +4,7 @@ from aws_cdk import (
 )
 import os
 
+
 class MyFirstEc2(core.Stack):
 
     def __init__(self, scope: core.App, name: str, key_name: str, **kwargs) -> None:
@@ -46,8 +47,10 @@ class MyFirstEc2(core.Stack):
         )
 
         # print the server address
-        core.CfnOutput(self, "InstancePublicDnsName", value=host.instance_public_dns_name)
+        core.CfnOutput(self, "InstancePublicDnsName",
+                       value=host.instance_public_dns_name)
         core.CfnOutput(self, "InstancePublicIp", value=host.instance_public_ip)
+
 
 app = core.App()
 MyFirstEc2(
