@@ -5,6 +5,11 @@ from aws_cdk import (
 import os
 
 
+# The following permissions are required to run
+# - AmazonEC2FullAccess
+# - AWSCloudFormationFullAccess
+# - AmazonSSMFullAccess
+# - IAMFullAccess
 class MyFirstEc2(core.Stack):
 
     def __init__(self, scope: core.App, name: str, key_name: str, **kwargs) -> None:
